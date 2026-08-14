@@ -16,7 +16,11 @@
 # Mono auto generated files
 mono_crash.*
 
+# Secrets
+.env
+
 # Build results
+dist
 [Dd]ebug/
 [Dd]ebugPublic/
 [Rr]elease/

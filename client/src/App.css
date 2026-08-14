@@ -1,0 +1,168 @@
+h1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.summary-section {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+.summary-section h2 {
+  margin: 0;
+}
+
+.transaction-delete-button,
+.delete-dialog button {
+  min-height: 2.25rem;
+  padding: 0.375rem 0.625rem;
+  border: 1px solid #b42626;
+  border-radius: 4px;
+  background: #ffffff;
+  color: #9f1d1d;
+  font: inherit;
+  cursor: pointer;
+}
+
+.transaction-edit-button {
+  min-height: 2.25rem;
+  padding: 0.375rem 0.625rem;
+  border: 1px solid #28634d;
+  border-radius: 4px;
+  background: #ffffff;
+  color: #28634d;
+  font: inherit;
+  cursor: pointer;
+}
+
+.transaction-edit-button:hover {
+  background: #28634d;
+  color: #ffffff;
+}
+
+.transaction-row-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.transaction-delete-button:hover,
+.delete-dialog__actions button:last-child {
+  background: #b42626;
+  color: #ffffff;
+}
+
+.transaction-delete-button:disabled,
+.delete-dialog button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.delete-dialog {
+  width: min(28rem, calc(100% - 2rem));
+  margin: auto;
+  padding: 1.5rem;
+  border: 1px solid #b7bdc5;
+  border-radius: 6px;
+  color: #17212b;
+}
+
+.delete-dialog::backdrop {
+  background: rgb(14 0 51 / 45%);
+}
+
+.delete-dialog form {
+  display: grid;
+  gap: 1rem;
+}
+
+.delete-dialog h2,
+.delete-dialog p {
+  margin: 0;
+}
+
+.delete-dialog__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.625rem;
+}
+
+.delete-dialog__actions button:first-child {
+  border-color: #b7bdc5;
+  color: #17212b;
+}
+
+.delete-dialog__actions button:first-child:hover {
+  background: #eaf1ef;
+}
+
+.transaction-dialog {
+  width: min(32rem, calc(100% - 2rem));
+  margin: auto;
+  padding: 1.5rem;
+  border: 1px solid #b7bdc5;
+  border-radius: 6px;
+  color: #17212b;
+}
+
+.transaction-dialog::backdrop {
+  background: rgb(14 0 51 / 45%);
+}
+
+.transaction-dialog form {
+  display: grid;
+  gap: 1rem;
+}
+
+.transaction-dialog h2,
+.transaction-dialog p {
+  margin: 0;
+}
+
+.transaction-dialog label {
+  display: grid;
+  gap: 0.375rem;
+  font-weight: 600;
+}
+
+.transaction-dialog input,
+.transaction-dialog select,
+.transaction-dialog button {
+  min-height: 2.5rem;
+  padding: 0.5rem 0.625rem;
+  border: 1px solid #b7bdc5;
+  border-radius: 4px;
+  background: #ffffff;
+  color: #17212b;
+  font: inherit;
+}
+
+.transaction-dialog small {
+  font-weight: 400;
+}
+
+.form-error {
+  color: #9f1d1d;
+}
+
+.transaction-dialog__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.625rem;
+}
+
+.transaction-dialog__actions button {
+  cursor: pointer;
+}
+
+.transaction-dialog__actions button:last-child {
+  border-color: #28634d;
+  background: #28634d;
+  color: #ffffff;
+}
+
+.transaction-dialog__actions button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
